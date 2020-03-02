@@ -21,14 +21,14 @@ export default class Test extends Component<TestArgs> {
     fill: false,
     intent: 'primary',
     icon: 'calendar',
-    rightIcon: 'add',
+    rightIcon: 'add'
   };
   text = 'button';
   className = 'hii';
   propsValue = {
     className: 'hgh',
     intent: 'primary',
-    icon: 'tick',
+    icon: 'tick'
   };
   size = 100;
   calloutText = `The component is a simple wrapper around the CSS API that provides props for modifiers and optional title element. Any additional HTML props will be spread to the rendered `;
@@ -39,11 +39,12 @@ export default class Test extends Component<TestArgs> {
     { value: 'a' },
     { value: 'b', className: 'foo' },
     { value: 'c', disabled: true },
-    { label: 'Dog' },
+    { label: 'Dog' }
   ];
   switchLabel = 'Privacy setting';
   textIG = 'hi';
-  value1 = 'asdfsdafasdfsdfsdfsdfsdfsdafasdfdsafasdfdsfadsfadsfdsfdsfdsfdsfsdfsdfdsfsdfsdfsd';
+  value1 =
+    'asdfsdafasdfsdfsdfsdfsdfsdafasdfdsafasdfdsfadsfadsfdsfdsfdsfdsfsdfsdfdsfsdfsdfsd';
   tagText = 'hii';
   values = ['hii', 'hii2'];
   @action
@@ -78,7 +79,7 @@ export default class Test extends Component<TestArgs> {
   }
 
   //numeric input
-  disabled = true;
+  disabled = false;
   fill = false;
   large = false;
   leftIcon = '';
