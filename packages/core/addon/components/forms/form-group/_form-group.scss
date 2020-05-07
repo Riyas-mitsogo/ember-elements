@@ -53,6 +53,10 @@ Styleguide form-group
     &.#{$ns}-intent-#{$intent} {
       .#{$ns}-form-helper-text {
         color: $color;
+        border-color: $color;
+      }
+      .#{$ns}-input {
+        border-color: $color;
       }
     }
   }

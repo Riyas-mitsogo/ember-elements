@@ -18,3 +18,16 @@ body {
   font-weight: 400;
   margin: 25px 0 10px;
 }
+.demo_icon_label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 10px 0 10px;
+	display: flex;
+	align-items: center;
+	
+	.material-icons{
+		margin-left: 15px;
+		font-size: 30px;
+	}
+}
