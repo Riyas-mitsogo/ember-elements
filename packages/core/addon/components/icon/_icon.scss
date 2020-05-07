@@ -1,5 +1,6 @@
 //should remove before publish
 @import '../../../../icons/addon/icons';
+@import './resources/material-icons.scss';
 
 // the icon class which will contain an SVG icon
 .#{$ns}-icon {
@@ -75,3 +76,5 @@ span.#{$ns}-icon:empty {
     content: $content;
   }
 }
+
+
