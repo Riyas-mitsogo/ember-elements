@@ -59,6 +59,11 @@ export const DIALOG_HEADER = `${DIALOG}-header`;
 
 export const DIVIDER = `${NS}-divider`;
 
+export const DRAWER = `${NS}-drawer`;
+export const DRAWER_BODY = `${DRAWER}-body`;
+export const DRAWER_FOOTER = `${DRAWER}-footer`;
+export const DRAWER_HEADER = `${DRAWER}-header`;
+
 export const PROGRESS_BAR = `${NS}-progress-bar`;
 export const PROGRESS_METER = `${NS}-progress-meter`;
 export const PROGRESS_NO_STRIPES = `${NS}-no-stripes`;
@@ -103,6 +108,13 @@ export const NAVBAR_DIVIDER = `${NAVBAR}-divider`;
 
 export const NUMERIC_INPUT = `${NS}-numeric-input`;
 
+export const MENU = `${NS}-menu`;
+export const MENU_ITEM = `${MENU}-item`;
+export const MENU_ITEM_LABEL = `${MENU_ITEM}-label`;
+export const MENU_SUBMENU = `${NS}-submenu`;
+export const MENU_DIVIDER = `${MENU}-divider`;
+export const MENU_HEADER = `${MENU}-header`;
+
 export const OVERLAY = `${NS}-overlay`;
 export const OVERLAY_BACKDROP = `${OVERLAY}-backdrop`;
 export const OVERLAY_CONTAINER = `${OVERLAY}-container`;
@@ -137,6 +149,9 @@ export const TAG_REMOVE = `${TAG}-remove`;
 export const TAG_INPUT = `${NS}-tag-input`;
 export const TAG_INPUT_ICON = `${TAG_INPUT}-icon`;
 export const TAG_INPUT_VALUES = `${TAG_INPUT}-values`;
+
+export const TOOLTIP = `${NS}-tooltip`;
+export const TOOLTIP_INDICATOR = `${TOOLTIP}-indicator`;
 
 export const SIZE_STANDARD = 16;
 export const SIZE_LARGE = 20;
@@ -192,3 +207,19 @@ export function elevationClass(elevation: Elevation) {
   }
   return `${NS}-elevation-${elevation}`;
 }
+
+export function positionClass(position: Position) {
+  if (position == null) {
+    return undefined;
+  }
+  return `${NS}-position-${position}`;
+}
+
+// select classes goes here
+export const MULTISELECT = `${NS}-multi-select`;
+export const MULTISELECT_POPOVER = `${MULTISELECT}-popover`;
+export const MULTISELECT_TAG_INPUT_INPUT = `${MULTISELECT}-tag-input-input`;
+export const OMNIBAR = `${NS}-omnibar`;
+export const OMNIBAR_OVERLAY = `${OMNIBAR}-overlay`;
+export const SELECT = `${NS}-select`;
+export const SELECT_POPOVER = `${SELECT}-popover`;
