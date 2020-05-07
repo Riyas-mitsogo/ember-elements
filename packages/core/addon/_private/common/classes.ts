@@ -1,6 +1,7 @@
 import { Alignment } from './alignment';
 import { Intent } from './intent';
 import { Elevation } from './elevation';
+import { StyleType } from './style_type';
 
 const NS = 'ee';
 
@@ -118,6 +119,18 @@ export const SPINNER_TRACK = `${SPINNER}-track`;
 
 export const PORTAL = `${NS}-portal`;
 
+export const POPOVER = `${NS}-popover`;
+export const POPOVER_ARROW = `${POPOVER}-arrow`;
+export const POPOVER_BACKDROP = `${POPOVER}-backdrop`;
+export const POPOVER_CONTENT = `${POPOVER}-content`;
+export const POPOVER_CONTENT_SIZING = `${POPOVER_CONTENT}-sizing`;
+export const POPOVER_DISMISS = `${POPOVER}-dismiss`;
+export const POPOVER_DISMISS_OVERRIDE = `${POPOVER_DISMISS}-override`;
+export const POPOVER_OPEN = `${POPOVER}-open`;
+export const POPOVER_TARGET = `${POPOVER}-target`;
+export const POPOVER_WRAPPER = `${POPOVER}-wrapper`;
+export const TRANSITION_CONTAINER = `${NS}-transition-container`;
+
 export const TAG = `${NS}-tag`;
 export const TAG_REMOVE = `${TAG}-remove`;
 
@@ -157,6 +170,11 @@ export function intentClass(intent?: Intent) {
     return undefined;
   }
   return `${NS}-intent-${intent.toLowerCase()}`;
+}
+
+/** Return CSS class for button style type. */
+export function styletypeClass(styletype: StyleType = 'calltoaction') {
+  return `${NS}-btn-${styletype.toLowerCase()}`;
 }
 
 /** Returns CSS class for icon name. */

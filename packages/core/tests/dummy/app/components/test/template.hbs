@@ -1,4 +1,307 @@
-{{! template-lint-disable}}
+{{!-- {{! template-lint-disable}} --}}
+{{! <link
+  href='https://fonts.googleapis.com/icon?family=Material+Icons'
+  rel='stylesheet'
+/> }}
+<link
+  href='https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp'
+  rel='stylesheet'
+/>
+<div class='comp_viewport'>
+  <p class='demo_title'>
+    Buttons
+  </p>
+  <p class='demo_sub_title'>
+    Call to action buttons
+  </p>
+  <Button @styleType='calltoaction' @intent='primary'>
+    Default
+  </Button>
+  <Button @styleType='calltoaction' @intent='elementary'>
+    Elementary
+  </Button>
+  <Button @styleType='calltoaction' @intent='secondary'>
+    Secondary
+  </Button>
+  <Button @styleType='calltoaction' @intent='negative'>
+    Negative
+  </Button>
+  <Button @styleType='calltoaction' @intent='negative_stroke'>
+    Negative Stroke
+  </Button>
+  <Button @styleType='calltoaction' @intent='primary' @disabled={{true}}>
+    Disabled
+  </Button>
+  <Button @styleType='calltoaction' @intent='elementary' @disabled={{true}}>
+    Disabled Elementary
+  </Button>
+  <br />
+  <p class='demo_sub_title'>
+    Action buttons
+  </p>
+  <Button @styleType='action' @intent='primary' @rightIcon='hex-arrow-down'>
+    Action
+  </Button>
+  <Button @styleType='action' @intent='elementary' @rightIcon='hex-arrow-down'>
+    Action
+  </Button>
+  <Button @styleType='action' @intent='secondary' @rightIcon='hex-arrow-down'>
+    Action
+  </Button>
+  <Button @styleType='action' @intent='negative' @rightIcon='hex-arrow-down'>
+    Action
+  </Button>
+  <Button
+    @styleType='action'
+    @intent='negative_stroke'
+    @rightIcon='hex-arrow-down'
+  >
+    Action
+  </Button>
+  <p class='demo_sub_title'>
+    Icon buttons
+  </p>
+  <Button @styleType='icon' @intent='primary' @rightIcon='hex-arrow-down' />
+  <Button @styleType='icon' @intent='primary' @rightIcon='hex-refresh-icon' />
+  <Button
+    @styleType='icon'
+    @intent='elementary'
+    @rightIcon='hex-refresh-icon'
+  />
+  <Button @styleType='icon' @intent='secondary' @rightIcon='hex-refresh-icon' />
+  <Button @styleType='icon' @intent='negative' @rightIcon='hex-refresh-icon' />
+  <Button
+    @styleType='icon'
+    @intent='negative_stroke'
+    @rightIcon='hex-refresh-icon'
+  />
+</div>
+<div>
+  <p class='demo_title'>
+    Material Icons
+  </p>
+  <p class='demo_sub_title'>
+    Navigation Icons
+  </p>
+  {{! <i class="material-icons">donut_small</i>
+	<i class="material-icons-outlined">donut_small</i>
+	<i class="material-icons-two-tone">donut_small</i>
+	<i class="material-icons-round">donut_small</i>
+	<i class="material-icons-sharp">donut_small</i>
+	<p class='demo_icon_label'>apps<i class='material-icons'>apps</i></p>
+	<p class='demo_icon_label'>arrow_back<i class='material-icons'>arrow_back</i></p>
+	<p class='demo_icon_label'>arrow_back_outline<i class='material-icons'>arrow_back_outline</i></p>
+	<p class='demo_icon_label'>arrow_back_ios<i class='material-icons'>arrow_back_ios</i></p>
+	<p class='demo_icon_label'>arrow_downward<i class='material-icons'>arrow_downward</i></p>
+	<p class='demo_icon_label'>arrow_drop_down<i class='material-icons'>arrow_drop_down</i></p>
+	<p class='demo_icon_label'>arrow_drop_down_circle<i class='material-icons'>arrow_drop_down_circle</i></p>
+	<p class='demo_icon_label'>arrow_drop_up<i class='material-icons'>arrow_drop_up</i></p>
+	<p class='demo_icon_label'>arrow_forward<i class='material-icons'>arrow_forward</i></p>
+	<p class='demo_icon_label'>arrow_forward_ios<i class='material-icons'>arrow_forward_ios</i></p>
+	<p class='demo_icon_label'>arrow_left<i class='material-icons'>arrow_left</i></p>
+	<p class='demo_icon_label'>arrow_right<i class='material-icons'>arrow_right</i></p>
+	<p class='demo_icon_label'>arrow_upward<i class='material-icons'>arrow_upward</i></p>
+	<p class='demo_icon_label'>chevron_left<i class='material-icons'>chevron_left</i></p>
+	<p class='demo_icon_label'>check<i class='material-icons'>check</i></p>
+	<p class='demo_icon_label'>chevron_left<i class='material-icons'>chevron_left</i></p>
+	<p class='demo_icon_label'>chevron_right<i class='material-icons'>chevron_right</i></p>
+	<p class='demo_icon_label'>chevron_left_outlined<i class='material-icons-outlined'>chevron_left</i></p>
+	<p class='demo_icon_label'>chevron_right_outlined<i class='material-icons-outlined'>chevron_right</i></p>
+	<p class='demo_icon_label'>close<i class='material-icons'>close</i></p>
+	<p class='demo_icon_label'>double_arrow<i class='material-icons'>double_arrow</i></p>
+	<p class='demo_icon_label'>expand_less<i class='material-icons'>expand_less</i></p>
+	<p class='demo_icon_label'>expand_more<i class='material-icons'>expand_more</i></p>
+	<p class='demo_icon_label'>expand_less outlined<i class='material-icons-outlined'>expand_less</i></p>
+	<p class='demo_icon_label'>expand_more outlined<i class='material-icons-outlined'>expand_more</i></p>
+	<p class='demo_icon_label'>first_page<i class='material-icons'>first_page</i></p>
+	<p class='demo_icon_label'>fullscreen<i class='material-icons'>fullscreen</i></p>
+	<p class='demo_icon_label'>fullscreen_exit<i class='material-icons'>fullscreen_exit</i></p>
+	<p class='demo_icon_label'>home_work<i class='material-icons'>home_work</i></p>
+	<p class='demo_icon_label'>last_page<i class='material-icons'>last_page</i></p>
+	<p class='demo_icon_label'>menu<i class='material-icons'>menu</i></p>
+	<p class='demo_icon_label'>menu_open<i class='material-icons'>menu_open</i></p>
+	<p class='demo_icon_label'>more_horiz<i class='material-icons'>more_horiz</i></p>
+	<p class='demo_icon_label'>more_vert<i class='material-icons'>more_vert</i></p>
+	<p class='demo_icon_label'>refresh<i class='material-icons'>refresh</i></p>
+	<p class='demo_icon_label'>subdirectory_arrow_left<i class='material-icons'>subdirectory_arrow_left</i></p>
+	<p class='demo_icon_label'>subdirectory_arrow_right<i class='material-icons'>subdirectory_arrow_right</i></p>
+	<p class='demo_icon_label'>unfold_less<i class='material-icons'>unfold_less</i></p>
+	<p class='demo_icon_label'>unfold_more<i class='material-icons'>unfold_more</i></p>
+	<p class='demo_sub_title'>
+		Toggle Icons
+	</p>
+	<p class='demo_icon_label'>check_box<i class='material-icons'>check_box</i></p>
+	<p class='demo_icon_label'>check_box_outline_blank<i class='material-icons'>check_box_outline_blank</i></p>
+	<p class='demo_icon_label'>indeterminate_check_box<i class='material-icons'>indeterminate_check_box</i></p>
+	<p class='demo_icon_label'>radio_button_checked<i class='material-icons'>radio_button_checked</i></p>
+	<p class='demo_icon_label'>radio_button_unchecked<i class='material-icons'>radio_button_unchecked</i></p>
+	<p class='demo_icon_label'>star<i class='material-icons'>star</i></p>
+	<p class='demo_icon_label'>star_border<i class='material-icons'>star_border</i></p>
+	<p class='demo_icon_label'>star_half<i class='material-icons'>star_half</i></p>
+	<p class='demo_icon_label'>star_outline<i class='material-icons'>star_outline</i></p>
+	<p class='demo_icon_label'>toggle_off<i class='material-icons'>toggle_off</i></p>
+	<p class='demo_icon_label'>toggle_on<i class='material-icons'>toggle_on</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p>
+	<p class='demo_icon_label'>icon<i class='material-icons'>compare_arrows</i></p> }}
+</div>
+<div>
+  <p class='demo_title'>
+    From Elements
+  </p>
+  <p class='demo_title'>
+    Form Groups
+  </p>
+  <p class='demo_sub_title'>
+    Form Groups - test
+  </p>
+  <FormGroup
+    @disabled={{this.disabled}}
+    @inline={{true}}
+    @intent='danger'
+    @label='Label'
+    @labelFor='text-input'
+    @helperText='Helper text with details'
+    @labelInfo={{requiredLabel}}
+  >
+    <InputGroup
+      placeholder='Placeholder text'
+      @disabled={{disabled}}
+      @intent={{intent}}
+    />
+  </FormGroup>
+  <p class='demo_sub_title'>
+    Form Groups - Error
+  </p>
+  <FormGroup
+    @disabled={{false}}
+    @inline={{true}}
+    @intent='danger'
+    @label='Label'
+    @labelFor='text-input'
+    @helperText='Helper text with details'
+    @labelInfo={{requiredLabel}}
+  >
+    <InputGroup
+      placeholder='Placeholder text'
+      @disabled={{false}}
+      @intent={{intent}}
+    />
+  </FormGroup>
+  <p class='demo_sub_title'>
+    Form Groups - Primary
+  </p>
+  <FormGroup
+    @disabled={{false}}
+    @inline={{true}}
+    @intent='primary'
+    @label='Label'
+    @labelFor='text-input'
+    @helperText='Helper text with details'
+    @labelInfo={{this.requiredLabel}}
+  >
+    <InputGroup
+      placeholder='Placeholder text'
+      @disabled={{true}}
+      @intent={{intent}}
+    />
+  </FormGroup>
+</div>
+
+<Popover
+  @popperTarget={{this.popperTargetValue}}
+  @isOpen={{this.isOpenPopper}}
+  @hasBackdrop={{false}}
+  @onClose={{action 'onClose'}}
+  @popoverClassName='ee-popover-content-sizing'
+>
+  <div>
+    <h5 class='ee-heading'>
+      Confirm deletion
+    </h5>
+    <p>
+      Are you sure you want to delete these items? You won't be able to recover them.
+    </p>
+    <div style='display: flex; justify-content: flex-end; margin-top: 15px;'>
+      <button
+        type='button'
+        class='ee-button ee-popover-dismiss'
+        style='margin-right: 10px;'
+      >
+        <span class='ee-button-text'>
+          Cancel
+        </span>
+      </button>
+      <button
+        type='button'
+        class='ee-button ee-intent-danger ee-popover-dismiss'
+      >
+        <span class='ee-button-text'>
+          Delete
+        </span>
+      </button>
+    </div>
+  </div>
+</Popover>
+<Button
+  @onClick={{action 'onOverlayToggle1'}}
+  @primary={{true}}
+  {{did-insert this.didInsertPopper}}
+>
+  Popover
+</Button>
 <Button @onClick={{action 'onClickButton'}}>
   {{#if this.isOpen}}
     {{this.hide}}
@@ -205,7 +508,7 @@
   <Button @icon='add' />
   <Button @icon='remove' />
 </ButtonGroup>
-<Navbar/>
+<Navbar />
 <Button @onClick={{action 'onOverlayToggle'}} @primary={{true}}>
   Show overlay
 </Button>
@@ -213,6 +516,8 @@
   @className='ee-overlay-scroll-container'
   @isOpen={{this.isOpenOverlay}}
   class="ee-card ee-elevation-4 docs-overlay-example-transition
+
+
     {{if this.useTallContent 'docs-overlay-example-tall'}}"
   @autoFocus={{this.autoFocus}}
   @enforceFocus={{this.enforceFocus}}
@@ -264,7 +569,6 @@
   </div>
 </Overlay>
 
-
 <Button @onClick={{action 'onDialogToggle'}}>
   Show dialog
 </Button>
@@ -275,7 +579,6 @@
   @canOutsideClickClose={{this.canOutsideClickClose}}
   @onClose={{action 'onClose'}}
   @icon='info-sign'
-
   @title='Palantir Foundry'
 >
   <div class='ee-dialog-body'>
@@ -315,4 +618,3 @@
     </div>
   </div>
 </Dialog>
-

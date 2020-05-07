@@ -4,20 +4,21 @@ import { action, set } from '@ember/object';
 interface TestArgs {}
 
 export default class Test extends Component<TestArgs> {
+  popperTargetValue!: HTMLElement;
   propsObject = {
     active: true,
     large: true,
     fill: false,
     intent: 'primary',
     icon: 'calendar',
-    rightIcon: 'add',
+    rightIcon: 'add'
   };
   text = 'button';
   className = 'hii';
   propsValue = {
     className: 'hgh',
     intent: 'primary',
-    icon: 'tick',
+    icon: 'tick'
   };
   size = 100;
   calloutText = `The component is a simple wrapper around the CSS API that provides props for modifiers and optional title element. Any additional HTML props will be spread to the rendered `;
@@ -28,11 +29,12 @@ export default class Test extends Component<TestArgs> {
     { value: 'a' },
     { value: 'b', className: 'foo' },
     { value: 'c', disabled: true },
-    { label: 'Dog' },
+    { label: 'Dog' }
   ];
   switchLabel = 'Privacy setting';
   textIG = 'hi';
-  value1 = 'asdfsdafasdfsdfsdfsdfsdfsdafasdfdsafasdfdsfadsfadsfdsfdsfdsfdsfsdfsdfdsfsdfsdfsd';
+  value1 =
+    'asdfsdafasdfsdfsdfsdfsdfsdafasdfdsafasdfdsfadsfadsfdsfdsfdsfdsfsdfsdfdsfsdfsdfsd';
   tagText = 'hii';
   values = ['hii', 'hii2'];
   @action
@@ -67,7 +69,7 @@ export default class Test extends Component<TestArgs> {
   }
 
   //numeric input
-  disabled = true;
+  disabled = false;
   fill = false;
   large = false;
   leftIcon = '';
@@ -113,13 +115,20 @@ export default class Test extends Component<TestArgs> {
   usePortal = true;
   canOutsideClickClose = true;
   useTallContent = false;
+  isOpenPopper = false;
   @action
   onOverlayToggle() {
     set(this, 'isOpenOverlay', !this.isOpenOverlay);
   }
   @action
+  onOverlayToggle1() {
+    set(this, 'isOpenPopper', !this.isOpenPopper);
+  }
+
+  @action
   onClose() {
     set(this, 'isOpenOverlay', false);
+    set(this, 'isOpenPopper', false);
     set(this, 'isOpenDialog', !this.isOpenDialog);
   }
 
@@ -157,5 +166,10 @@ export default class Test extends Component<TestArgs> {
   @action
   onDialogToggle() {
     set(this, 'isOpenDialog', !this.isOpenDialog);
+  }
+
+  @action
+  didInsertPopper(element: HTMLElement) {
+    this.popperTargetValue = element;
   }
 }
